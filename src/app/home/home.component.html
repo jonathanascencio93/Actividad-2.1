@@ -1,0 +1,23 @@
+<div class="row">
+
+  <div class="col s3" *ngFor =  "let contact of contacts">
+    <div class="card">
+      <div class="card-image">
+        <img class="activator" [src] = 'contact.photo'>
+        <span class="card-title"></span>
+      </div>
+      <div class="card-content">
+        <p class="text-align center">{{contact.name}}
+        </p>
+        <p class="text-align center">{{contact.cellphone}}
+        </p>
+        <p class="text-align center">{{contact.email}}
+        </p>
+      </div>
+      <div class="card-action">
+        <a [routerLink]="['contacts',contact.id]">View Contact</a>
+      </div>
+    </div>
+  </div>
+
+</div>

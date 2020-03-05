@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col s12">
+    <h3>Contact Details</h3>
+  </div>
+</div>
+
+<div class="row">
+
+
+  <form class="col s12" [formGroup] = "contactForm" (ngSubmit) = "onSubmit()">
+
+    <div class="col s12 l4">
+      <img class="materialboxed" width="50%" [src]="contact?.photo">
+    </div>
+    <div class="col s12 l8">
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="name" type="text" class="validate">
+              <label class = "active" for="name">Name</label>
+            </div>
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">phone</i>
+              <input id="cellphone" type="tel" class="validate">
+              <label class= "active" for="cellphone">Cellphone</label>
+            </div>
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="tel" class="validate">
+              <label class= "active" for="email">Email</label>
+            </div>
+
+              <div class="row">
+                <div class="col s12 l6">
+                  <a class="waves-effect waves-light btn-large red">Delete</a>
+                </div>
+                <div class="col s12 l6">
+                  <a class="waves-effect waves-light btn-large blue-grey">Edit</a>
+                </div>
+
+              </div>
+            </div>
+        </form>
+      </div>
+
+    </div>
+
+  </form>
+
+</div>
